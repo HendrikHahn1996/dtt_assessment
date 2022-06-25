@@ -27,7 +27,7 @@ export default {
         height: 150px;
         width: 100%;
         display: flex;
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Montserrat', sans-serif;
     
 
     }
@@ -42,6 +42,7 @@ export default {
         margin-top: 8px;
         margin-left: 20%;
         display: grid;
+        
 
     }
 
@@ -78,5 +79,6 @@ export default {
         padding-top: 10px;
         text-align: center;
         border-radius: 10px;
+      
     }
 </style>
