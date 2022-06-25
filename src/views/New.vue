@@ -37,7 +37,11 @@
                         </span>
                         <span class="spanSecondRow">
                             <input type="text" id="size" name="size" placeholder="e.g. 60m2" v-model="postData.size">
-                            <input type="number" id="garage" name="garage" placeholder="Select" v-model="postData.garage">
+                            <select name="garage" id="garage">
+                                <option value="">--</option>
+                                <option value="">Yes</option>
+                                <option value="">No</option>
+                            </select>
                         </span>
                         <span class="spanFristRow">                
                             <label for="bedrooms">Bedrooms*</label>
@@ -77,7 +81,7 @@ export default {
     },
     data() {
         return {
-            postData : {
+            postData : {  //initalize values with default value = null 
                 streetName: null,
                 houseNumber: null,
                 addition: null,
@@ -174,7 +178,7 @@ export default {
         height: 40px;
         padding-left: 5px;
         border-radius: 10px;
-             font-family: 'Montserrat', sans-serif;
+        font-family: 'Montserrat', sans-serif;
     }
 
     textarea {
@@ -192,6 +196,17 @@ export default {
         width: 20%;
         background-color: #EB5440;
         color: white;
+    }
+
+    #garage {
+        margin-bottom: 20px;
+        border: none;
+        background-color: white;
+        height: 40px;
+        width: 170px;
+        padding-left: 5px;
+        border-radius: 10px;
+        font-family: 'Montserrat', sans-serif;
     }
     
 </style>
